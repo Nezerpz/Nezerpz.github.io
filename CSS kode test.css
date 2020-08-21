@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-color: lightgray;
+}
+
+#heading {
+    background-color: lightgray;
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h1#heading {
+    color: dimgray;
+    font-size: 30px
+}
+
+#sidebar {
+    background-color: dimgray;
+    width: 100%;
+    height: 100px;
+}
+
+ul.sidebar {
+    padding-top: 30px;
+    list-style-type: none;
+}
+
+li.sidebar {
+    display: inline-block;
+    width: 10px;
+    font-size: 40px;
+    padding-top: 5px;
+    padding-right: 8%;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 20px;
+    padding-left: 1.5%;
+}
+
+li.sidebar:hover {
+    background-color: white;
+}
+
+#downbar {
+    background-color: dimgray;
+    width: 18%;
+    padding-top: 40px;
+    height: 710px;
+    float: left;
+
+}
+
+ul.downbar {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+li.downbar {
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+li.downbar:hover {
+    background-color: white;
+}
+
+#informasjon {
+    width: 80%;
+    background-color: blue;
+    float: right;
+    height: 710px;
+    padding-top: 40px;
+    padding-left: 38px;
+}
