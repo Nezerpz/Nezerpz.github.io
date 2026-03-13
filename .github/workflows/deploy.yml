@@ -12,10 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Use Node.js 18
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         run: |
@@ -24,13 +24,18 @@ jobs:
             npm i --include=optional
           )
 
+      - name: Rebuild native modules (if needed)
+        run: |
+          # Try to build native optional dependencies from source as a fallback
+          npm rebuild --build-from-source || true
+
       - name: Build
         run: npm run build
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAGES_TOKEN }}
           publish_dir: ./docs
           publish_branch: gh-pages
 
