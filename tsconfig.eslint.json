@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true
+  },
+  "include": [
+    "src",
+    "tailwind.config.cjs",
+    "vite.config",
+    "postcss.config.cjs"
+  ]
+}

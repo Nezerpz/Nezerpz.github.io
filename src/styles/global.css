@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* Keep this file minimal - use Tailwind utility classes in components */
+
+/* Ensure a vertical scrollbar reserve on all pages */
+body {
+	overflow-y: scroll;
+}
