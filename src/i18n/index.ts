@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react';
+
 export enum Languages {
   EN = 'en',
   NO = 'no',
@@ -77,7 +79,6 @@ function getAgeFromDOB(dob: string): number {
 
 export function setLanguage(lang: Languages) {
   currentLanguage = lang;
-  // notify subscribers
   listeners.forEach((cb) => cb(lang));
 }
 
@@ -91,9 +92,6 @@ export function onLanguageChange(cb: LanguageCallback): () => void {
     if (i >= 0) listeners.splice(i, 1);
   };
 }
-
-// React hook for components to read translations and update automatically
-import { useEffect, useState } from 'react';
 
 export function useTranslation() {
   const [lang, setLang] = useState<Languages>(currentLanguage);
