@@ -8,8 +8,6 @@ on:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    env:
-      NPM_CONFIG_OPTIONAL: "false"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -20,7 +18,11 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm ci || npm install --no-optional
+        run: |
+          npm ci || (
+            rm -rf node_modules package-lock.json || true
+            npm i --include=optional
+          )
 
       - name: Build
         run: npm run build
