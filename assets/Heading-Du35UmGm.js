@@ -1,0 +1,1 @@
+import{j as o}from"./index-gc_P2LaY.js";function i({level:t=1,children:s,className:e=""}){const n=`h${t}`;return o.jsx(n,{className:`text-3xl font-semibold leading-tight ${e}`,children:s})}export{i as H};
