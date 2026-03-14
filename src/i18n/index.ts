@@ -26,7 +26,7 @@ export const translations: Record<Languages, TranslationMap> = {
     aboutTitle: 'About Me',
     aboutDescription: `I am ${getAgeFromDOB(DOB)} years old and grew up in Førde. 
     I have a background as a data electronics technician and as an application developer. 
-    In my spare time I like to play games, make music and hang out with friends.`,
+    In my spare time I like to play games and hang out with friends.`,
     aboutSkillsTitle: 'Skills',
     projectsTitle: 'Projects',
     projectsDescription:
@@ -42,7 +42,7 @@ export const translations: Record<Languages, TranslationMap> = {
     aboutTitle: 'Om meg',
     aboutDescription: `Eg er ${getAgeFromDOB(DOB)} år gamal og har vakse opp i Førde. 
     Eg har bakgrunn som dataelektronikar og som applikasjonsutviklar. 
-    I fritida likar eg å spele dataspel, lage musikk og vere med vener.`,
+    I fritida likar eg å spele dataspel og vere med vener.`,
     aboutSkillsTitle: 'Ferdigheiter',
     projectsTitle: 'Prosjekter',
     projectsDescription:
