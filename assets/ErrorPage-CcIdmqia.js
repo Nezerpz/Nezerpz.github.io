@@ -1,0 +1,1 @@
+import{j as e}from"./index-Cy7kJqc7.js";function s(){return e.jsxs("div",{className:"p-8 text-center",children:[e.jsx("h1",{className:"text-2xl font-semibold",children:"Oops — an error occurred"}),e.jsx("p",{className:"mt-2 text-slate-400",children:"Try refreshing the page or check the console for details."})]})}export{s as default};
