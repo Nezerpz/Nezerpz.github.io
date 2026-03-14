@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <section>
       <Heading className="mb-8" level={1}>{t('aboutTitle')}</Heading>
-      <div className="flex items-start gap-6">
+      <div className="flex sm:flex-row flex-col items-start gap-6">
         <img
           src={IMAGE_PATH}
           alt="Headshot"

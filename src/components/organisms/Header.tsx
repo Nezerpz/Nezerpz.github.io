@@ -26,8 +26,8 @@ export default function Header() {
   const githubAvatar = `https://github.com/${GITHUB_USERNAME}.png`;
 
   return (
-    <header className="flex items-center justify-between px-4 py-3 border-b border-slate-800">
-      <div className="flex items-center gap-3">
+    <header className="relative grid grid-cols-3 items-center px-4 py-3 border-b border-slate-800">
+      <div className="flex items-center gap-3 col-start-1">
         {avatarUrl ? (
           <a href={`https://github.com/${GITHUB_USERNAME}`} target="_blank" rel="noreferrer" aria-label="Open GitHub profile">
             <img
@@ -52,9 +52,11 @@ export default function Header() {
         </div>
       </div>
 
-      <Nav />
+      <div className="col-start-2 flex justify-center">
+        <Nav />
+      </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 justify-end col-start-3">
         <button
           className={`px-2 py-1 rounded focus:outline-none focus:ring ${lang === Languages.EN ? 'bg-slate-700 text-white' : 'bg-transparent text-slate-200 hover:bg-slate-700 hover:text-white'}`}
           onClick={() => setLanguage(Languages.EN)}
