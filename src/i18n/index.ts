@@ -15,6 +15,9 @@ export type TranslationMap = {
   contactPhoneLabel: string;
   contactEmailLabel: string;
   contactDownloadCV: string;
+  contactViewCV: string;
+  contactReferencesTitle: string;
+  contactReferencesText: string;
   contactPhone: string;
   contactEmail: string;
 };
@@ -35,6 +38,9 @@ export const translations: Record<Languages, TranslationMap> = {
     contactPhoneLabel: 'Phone',
     contactEmailLabel: 'Email',
     contactDownloadCV: 'Download CV',
+    contactViewCV: 'View CV',
+    contactReferencesTitle: 'References',
+    contactReferencesText: 'References available upon request.',
     contactPhone: '+47 913 31 063',
     contactEmail: 'henrik.aamot@pm.me',
   },
@@ -51,6 +57,9 @@ export const translations: Record<Languages, TranslationMap> = {
     contactPhoneLabel: 'Telefon',
     contactEmailLabel: 'E-post',
     contactDownloadCV: 'Last ned CV',
+    contactViewCV: 'Se CV',
+    contactReferencesTitle: 'Referanser',
+    contactReferencesText: 'Referansar tilgjengeleg på førespurnad.',
     contactPhone: '+47 913 31 063',
     contactEmail: 'henrik.aamot@pm.me',
   },
