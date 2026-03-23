@@ -1,1 +1,0 @@
-import{j as e}from"./index-Cy7kJqc7.js";function s(){return e.jsxs("div",{className:"p-8 text-center",children:[e.jsx("h1",{className:"text-2xl font-semibold",children:"404 — Page not found"}),e.jsx("p",{className:"mt-2 text-slate-400",children:"The page you are looking for does not exist."})]})}export{s as default};

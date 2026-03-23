@@ -1,1 +1,0 @@
-import{j as e}from"./index-Cy7kJqc7.js";function a({loadingText:t="Loading..."}){return e.jsx("div",{className:"flex items-center justify-center h-full",children:e.jsx("div",{className:"text-center text-slate-400",children:t})})}export{a as default};

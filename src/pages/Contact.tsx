@@ -77,6 +77,7 @@ export default function Contact() {
       <div className="mt-8">
         <Heading level={2}>{t('contactReferencesTitle')}</Heading>
         <div className="space-y-2 mt-2">
+          <p>{t('contactReferencesDescription')}</p>
           {references.map((r) => (
             <div key={r.phone}>
               <Text>

@@ -20,6 +20,7 @@ export type TranslationMap = {
   contactReferencesText: string;
   contactPhone: string;
   contactEmail: string;
+  contactReferencesDescription: string;
 };
 
 const DOB = '31.10.02';
@@ -43,6 +44,7 @@ export const translations: Record<Languages, TranslationMap> = {
     contactReferencesText: 'References available upon request.',
     contactPhone: '+47 913 31 063',
     contactEmail: 'henrik.aamot@pm.me',
+    contactReferencesDescription: 'References available upon request.',
   },
   [Languages.NO]: {
     aboutTitle: 'Om meg',
@@ -62,6 +64,7 @@ export const translations: Record<Languages, TranslationMap> = {
     contactReferencesText: 'Referansar tilgjengeleg på førespurnad.',
     contactPhone: '+47 913 31 063',
     contactEmail: 'henrik.aamot@pm.me',
+    contactReferencesDescription: 'Referansar tilgjengeleg på førespurnad.',
   },
 };
 
