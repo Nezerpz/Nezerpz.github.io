@@ -5,7 +5,7 @@ import { useTranslation } from '@/i18n';
 export default function Home() {
   const { t } = useTranslation();
   const IMAGE_PATH = '/images/Headshot.png';
-  const SKILLICONS_URL = 'https://skillicons.dev/icons?perline=9&i=ts,docker,git,yarn,npm,nodejs,html,css,docker,jest,sqlite,java,php,figma,react,arduino,bun,cs,idea,mysql,postman,py,rider,vite,vscode';
+  const SKILLICONS_URL = 'https://skillicons.dev/icons?perline=9&i=ts,docker,git,yarn,npm,nodejs,html,css,jest,sqlite,java,php,figma,react,arduino,bun,cs,idea,mysql,postman,py,rider,vite,vscode';
 
   return (
     <section>
